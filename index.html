@@ -1017,49 +1017,57 @@
               class="st-contact-form"
               id="contact-form"
             >
+              <!-- Required for Web3Forms -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="3c907157-01c4-443f-88d1-81cbcd9516fd"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Website Contact Form"
+              />
+
+              <!-- Spam protection (must stay empty) -->
+              <input type="checkbox" name="botcheck" style="display: none" />
+
               <div class="st-form-field">
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   placeholder="Your Name"
                   required
                 />
               </div>
+
               <div class="st-form-field">
                 <input
-                  type="text"
-                  id="email"
+                  type="email"
                   name="email"
                   placeholder="Your Email"
                   required
                 />
               </div>
+
               <div class="st-form-field">
                 <input
                   type="text"
-                  id="subject"
                   name="subject"
                   placeholder="Your Subject"
                   required
                 />
               </div>
+
               <div class="st-form-field">
                 <textarea
-                  cols="30"
-                  rows="10"
-                  id="msg"
-                  name="msg"
+                  name="message"
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
-              <button
-                class="st-btn st-style1 st-color1"
-                type="submit"
-                id="submit"
-                name="submit"
-              >
+
+              <button class="st-btn st-style1 st-color1" type="submit">
                 Send message
               </button>
             </form>
@@ -1070,8 +1078,10 @@
             <div class="st-height-b0 st-height-lg-b40"></div>
             <h3 class="st-contact-title">Contact Info</h3>
             <div class="st-contact-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              ligula nulla tincidunt id faucibus sed suscipit feugiat.
+              I’d love to hear from you. Whether you have a question, need
+              support, or want to discuss a project, feel free to reach out and
+              share the details with me. I will review your message and get back
+              to you as soon as possible — send an email.
             </div>
             <div class="st-contact-info-wrap">
               <div class="st-single-contact-info">
@@ -1165,5 +1175,6 @@
     <script src="assets/js/ripples.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
